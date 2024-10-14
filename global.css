@@ -1,0 +1,36 @@
+/*Estilos que se repiten, es como un formato general para etiquetas globales*/
+*{
+    box-sizing: border-box;
+    /*Esta propiedad hace que se deslice suave la página*/
+    scroll-behavior: smooth;
+}
+
+html{
+    /*con esto hacemos que rem equivalga  a 10 px*/
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+a{
+    /*Quita lo subraydo de los enlaces con el none*/
+    text-decoration: none;
+}
+
+/*pseudo clase empieza con :*/
+:root{
+
+    /*variables:
+    empiezan con doble guion y nombre*/
+    --main-color: rgb(7, 25, 82);
+    --dark-green: rgb(11, 102, 106);
+    --ligth-green: rgb(53, 162, 159);
+    --ligther-green: rgb(53, 162, 159);
+    --white-soft: rgb(244, 244, 244);
+    --subtitle: 5rem;
+    
+}
+
+body{
+    background-color: var(--white-soft);
+}
