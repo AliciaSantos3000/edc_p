@@ -1,13 +1,20 @@
 .aboutme{
     display: flex;
     background-color: var(--ligther-green);
+
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    padding: 3rem;
 }
 
 .about__container{
     color: var(--main-color);
     width: 50%;
-    min-width: 29rem;
-    
+    /*min-width: 29rem;*/
+ 
 }
 
 .about__title{
@@ -15,7 +22,7 @@
 }
 
 .about__icon{
-    font-size: 2.4rem;
+    font-size: 2.5rem;
 }
 
 .about__content{
@@ -25,7 +32,7 @@
 }
 
 .about__social{
-    padding-top: 2rem;
+    padding-top: 8rem;
 }
 
 .about__media{
@@ -36,7 +43,7 @@
 }
 
 .about__image{
-    width: 45%;
+    width: 90%;
     min-width: 33rem;
     margin-top: 5rem;
 }

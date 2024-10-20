@@ -10,6 +10,11 @@
      <link rel="shortcut icon" href="./assets/ico/icon-sofi.ico" type="image/x-icon">
      <!-- Este es un script (codigo) para ayudar a importar iconos -->
      <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+     <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     
     <!--stilos css-->
     <link rel="stylesheet" href="reset.css">
@@ -18,12 +23,15 @@
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="skills.css">
-    <title>Mi portafolio</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Mi página</title>
 </head>
 
 <body>
     <header class="header">
-        <a href="#"class="header__link"><img class="header__img" src="kirbo_header.png" alt="kirbo_header" style="background: transparent;">
+        <a href="#"class="header__link">
+            <img class="header__img" src="kirbo_header.png" alt="kirbo_header" alt="logo">
             <h2 class="header__text">PlayerLeXeS HTG</h2>
         </a>
         <nav class="menu">
@@ -31,9 +39,7 @@
             <li class="menu__link"><a href="">Skills</a></li>
             <li class="menu__link"><a href="">Portofolio</a></li>
             <li class="menu__link"><a href="">Contacto</a></li>
-
         </ul>
-
         </nav>
     </header>
     <main>
@@ -42,24 +48,24 @@
                 <h1 class="hero__title">PlayerLeXeS HTG</h1>
                 <h3 class="hero__description">Human being</h3>
             </div>
-            <img class="hero__image" src="alice.png" alt="alice">
+            <img class="hero__image" src="alice.png" alt="foto de perfil">
         </section>
         <section class="aboutme" id="about">
             <div class="about__media">
-                <img class="about__image" src="src" alt="fondo">
+                <img class="about__image" src="ariana_grande.png" alt="">
             </div>
             <div class="about__container">
                 <h2 class="about__title subtitle">About me</h2>
                 <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur tenetur obcaecati ad distinctio at ab laboriosam harum consequatur et maiores sunt vel blanditiis, facilis quibusdam facere? Fugiat, aut animi?</p>
             </div>
             <div class="about__social">
-                <iconify-icon class="about__icon" icon="skill-icons:instagram"></iconify-icon>
-                <iconify-icon class="about__icon" icon="logos:youtube-icon"></iconify-icon>
-                <iconify-icon class="about__icon" icon="skill-icons:linkedin"></iconify-icon>
+                <iconify-icon class="about__icon" icon="devicon:github"></iconify-icon>
+                <iconify-icon class="about__icon" icon="hugeicons:new-twitter"></iconify-icon>
+                <iconify-icon class="about__icon" icon="devicon:linkedin"></iconify-icon>
             </div>
         </section>
         <section class="skills" id="skills">
-            <h2 class="skill___title subtitle">Skills</h2>
+            <h2 class="skills__title subtitle">Skills</h2>
             <div class="cards__container">
                 <div class="card">
                     <iconify-icon class="cards__icon"icon="devicon:html5"></iconify-icon>
@@ -77,16 +83,37 @@
             </div>
         </section>
         <section class="contact" id="contact">
-            <form action="">
-                <h2>Conctact</h2>
-                inputs
+            <form class="form" action="#">
+                <h2 class="form__title subtitle">Conctact</h2>
+                <label class="form__label" for="name">Nombre</label>
+                <input class="form__input" id="name" type="text" name="name" placeholder="Escribe tu Nombre"></label><!--PLACEHOLDER SIRVE PARA PONER EL EJEMPLO DEL TEXTO EN EL FORMULARIO-->
+                <label class="form__label" for="email">Correo electronico</label>
+                <input class="form__input" id="email" type="email" name="email" placeholder="Escribe tu Correo Electrónico"></label>
+                <label class="form__label" for="message">Mensaje</label>
+                <textarea class="form__textarea" id="message" name="message" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                <input class="form__btn" type="submit" value="Enviar">
+                
             </form>
         </section>
     </main>
-    <footer>
-        <div></div>
-        <div></div>
-        <div></div>
+    <footer class="footer">
+        <div class="footer__container footer__container--logo">
+            <a class="footer__link" href="#">
+                <img class="footer__img" src="alice.png" alt="logo">
+                <h2 class="footer__logo">Alicia Santos</h2>
+        </div>
+        <div  class="footer__container footer__container--links">
+            <ul class="footer__list">
+                <li class="footer__element"><a class="footer__link" href="#">Acerca de mi</a></li>
+                <li class="footer__element"><a class="footer__link" href="#">Contacto</a></li>
+                <li class="footer__element"><a class="footer__link" href="#">Referencias</a></li>
+            </ul>
+        </div>
+        <div class="footer__container footer__container--social">
+            <a class="footer__link" href="https://github.com/AliciaSantos3000" target="_blank" ><iconify-icon class="footer__icon footer__icon-github" icon="devicon:github" width="50"></iconify-icon></a>
+            <a class="footer__link" href="https://x.com/LeXeZzZ" target="_blank"><iconify-icon class="footer__icon" icon="hugeicons:new-twitter" width="50"></iconify-icon></a>
+            <a class="footer__link" href="https://www.linkedin.com/in/anaaliciasantossuarez/" target="_blank"><iconify-icon class="footer__icon" icon="devicon:linkedin" width="50"></iconify-icon></a>
+        </div>
     </footer>
 </body>
 

@@ -16,6 +16,9 @@ a{
     /*Quita lo subraydo de los enlaces con el none*/
     text-decoration: none;
 }
+textarea{
+    resize: none;
+}
 
 /*pseudo clase empieza con :*/
 :root{
@@ -31,6 +34,11 @@ a{
     
 }
 
+.subtitle{
+    font-size: var(--subtitle);
+}
+
 body{
     background-color: var(--white-soft);
+    background-image: url("background__image.gif");
 }
