@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3rem;
+    background-color: purple;
+    height: 20vh;
+    align-items: center;
+}
+.footer__img{
+    width: 9rem;
+}
+.footer__logo{
+    font-size: 1.3rem;
+    color:aliceblue;
+    font-weight: 600;
+}
+.footer__link{
+    color:wheat;
+    font-size: 1.4rem;
+
+}
+.footer_element{
+    margin-bottom: 8px;
+}
+.footer__icon{
+    font-size: 3rem;
+}
+.footer__icon-github{
+    filter: invert(1);
+}
+.footer__container-links{
+    justify-content: center;
+}

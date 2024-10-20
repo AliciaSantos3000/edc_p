@@ -29,6 +29,9 @@
     height: 16rem;
     width: 11rem;
     justify-content: space-around;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 }
 .skills__title{
     color: var(--ligth-green);
