@@ -40,5 +40,5 @@ textarea{
 
 body{
     background-color: var(--white-soft);
-    background-image: url("background__image.gif");
+    background-image: url("../assets/img/background__image.gif");
 }
